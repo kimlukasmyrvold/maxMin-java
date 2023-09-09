@@ -5,8 +5,6 @@ public class Main {
             throw new java.util.NoSuchElementException("The inputed table is empty!");
         }
 
-        // // The cheaty way
-        // return Arrays.stream(input).max().getAsInt();
         int max = input[0];
         int index = 0;
 
@@ -40,7 +38,7 @@ public class Main {
 
     public static int[] minmax(int[] input) {
         if (input.length < 1) {
-            throw new java.util.NoSuchElementException("Input filled array");
+            throw new java.util.NoSuchElementException("Error: Input array not filled!");
         }
 
         int min = input[0], max = input[0];
